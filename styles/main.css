@@ -1,0 +1,25 @@
+h1{
+text-align: center;
+color: rgb(226, 101, 43);
+}
+#location{
+    text-align: center;
+    color: black solid;
+    
+    }
+#error-message{
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+#device-lat{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(228, 154, 18);
+}
+#device-long{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(228, 154, 18);
+}
