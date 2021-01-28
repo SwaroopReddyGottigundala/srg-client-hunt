@@ -44,7 +44,7 @@ async function locationHandler() {
     });
 
     if (error) {
-        document.getElementById("error-message").innerHTML = "You're not within the range of the location.";
+        document.getElementById("error-message").innerHTML = "You're not within the range of the Franken Hall.";
     } else {
         document.getElementById("error-message").innerHTML = "";
     }
