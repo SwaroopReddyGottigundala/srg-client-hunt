@@ -1,7 +1,7 @@
 export default [{
-    Name: 'Franken Hall',
-    Latitude: 40.35435646901969,
-    Longitude:  -94.8884037021279 
+    Name: 'Horizon West Appartments',
+    // Latitude: 40.358970,
+    // Longitude: -94.883195
 },
 {
     Name: 'Hughes Fieldhouse',

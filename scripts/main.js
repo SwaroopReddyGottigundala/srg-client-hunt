@@ -46,8 +46,8 @@ async function locationHandler() {
     });
 
     if (error) {
-        document.getElementById("error-message").innerHTML = "You're not within the 20 meter range of the Franken Hall.";
-        let utterance = new SpeechSynthesisUtterance("You are not within the 20 meter range of Franken Hall.");
+        document.getElementById("error-message").innerHTML = "You're not within the 20 meter range of the any of the locations.";
+        let utterance = new SpeechSynthesisUtterance("You are not within the 20 meter range of any of the locations.");
         speechSynthesis.speak(utterance);
     } else {
         document.getElementById("error-message").innerHTML = "";
