@@ -39,12 +39,16 @@ async function locationHandler() {
     locationsArray.forEach(function(value) {
         if (isInside(value.Latitude, value.Longitude)) {
             document.getElementById("locationAnswer").innerHTML = value.Name;
+            let utterance = new SpeechSynthesisUtterance("You have reached. Welcome to " + value.Name);	
+            speechSynthesis.speak(utterance);
             error = false;
         }
     });
 
     if (error) {
-        document.getElementById("error-message").innerHTML = "You're not within the range of the Franken Hall.";
+        document.getElementById("error-message").innerHTML = "You're not within the 20 meter range of the Franken Hall.";
+        let utterance = new SpeechSynthesisUtterance("You are not within the 20 meter range of Franken Hall.");
+        speechSynthesis.speak(utterance);
     } else {
         document.getElementById("error-message").innerHTML = "";
     }
